@@ -50,7 +50,7 @@ const Activities = () => {
 
   const fetchActivities = async () => {
     try {
-      const response = await fetch('https://myfitnesstracking-app.onrender.com/api/activities/', {
+      const response = await fetch('https://myfitnesstracking-v3.onrender.com/api/activities/', {
         headers: {
           'Authorization': `Bearer ${token}`,
         },
