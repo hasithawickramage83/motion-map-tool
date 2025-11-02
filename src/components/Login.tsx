@@ -22,7 +22,7 @@ const Login = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('https://myfitnesstracking-app.onrender.com/api/token/', {
+      const response = await fetch('https://myfitnesstracking-v3.onrender.com/api/token/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
