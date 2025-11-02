@@ -80,8 +80,8 @@ const Activities = () => {
 
     try {
       const url = editingActivity
-        ? `https://myfitnesstracking-app.onrender.com/api/activities/${editingActivity.id}/`
-        : 'https://myfitnesstracking-app.onrender.com/api/activities/';
+        ? `https://myfitnesstracking-v3.onrender.com/api/activities/${editingActivity.id}/`
+        : 'https://myfitnesstracking-v3.onrender.com/api/activities/';
       
       const response = await fetch(url, {
         method: editingActivity ? 'PUT' : 'POST',
@@ -109,7 +109,7 @@ const Activities = () => {
     if (!confirm('Are you sure you want to delete this activity?')) return;
 
     try {
-      const response = await fetch(`https://myfitnesstracking-app.onrender.com/api/activities/${id}/`, {
+      const response = await fetch(`https://myfitnesstracking-v3.onrender.com/api/activities/${id}/`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${token}`,
