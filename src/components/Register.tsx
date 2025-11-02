@@ -21,7 +21,7 @@ const Register = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('https://myfitnesstracking-app.onrender.com/api/auth/register/', {
+      const response = await fetch('https://myfitnesstracking-v3.onrender.com/api/auth/register/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
